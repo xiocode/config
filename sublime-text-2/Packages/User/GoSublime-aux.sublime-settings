@@ -1,0 +1,53 @@
+{
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/golearning":
+	[
+		"go run test.go",
+		"go run split.go",
+		"go run splitGoroutine.go"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/golearning/Week1/task1":
+	[
+		"go run task1.go"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/walle":
+	[
+		"go run walle.go"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/walle/app/controllers":
+	[
+		"go get"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/walle/app/models":
+	[
+		"go install",
+		"go run users.go",
+		"go test -v",
+		"go get"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/walle/app/toolkit/helpers":
+	[
+		"go get -u",
+		"go get"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/walle/backend/models/users/engine":
+	[
+		"go test",
+		"go get",
+		"go test -v"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/walle/test":
+	[
+		"go install",
+		"go get",
+		"go run test.go"
+	],
+	"9o.hist./home/xio/Dropbox/Developer/Go/src/weigo":
+	[
+		"go test weigo",
+		"go test -v weigo",
+		"go test -v"
+	],
+	"ann": "a13.04.01-1",
+	"mg9_install_tokens": "r13.04.01-1",
+	"version": "r13.04.01-1"
+}

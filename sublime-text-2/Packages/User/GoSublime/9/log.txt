@@ -1,0 +1,20 @@
+
+** 2013-03-16 07:39:55.832018 **:
+GsComplete: Blocking Call: Timeout
+--------------------------------
+
+** 2013-03-18 10:42:05.062272 **:
+MarGo: Installation aborted. Install command already called for GoSublime r13.03.03-1.
+--------------------------------
+
+** 2013-03-21 10:23:24.013103 **:
+MarGo: Installation aborted. Install command already called for GoSublime r13.03.16-2.
+--------------------------------
+
+** 2013-03-22 05:27:05.970228 **:
+MarGo: Installation aborted. Install command already called for GoSublime r13.03.20-1.
+--------------------------------
+
+** 2013-03-25 11:33:40.112548 **:
+MarGo: Installation aborted. Install command already called for GoSublime r13.03.20-1.
+--------------------------------

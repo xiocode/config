@@ -1,0 +1,410 @@
+{
+	"folder_history":
+	[
+		"/home/xio/Dropbox/Developer/Github/gopkg",
+		"/home/xio/Dropbox/Developer/Go/src/weigo"
+	],
+	"last_window_id": 5,
+	"settings":
+	{
+		"new_window_height": 0.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/xio/Dropbox/Developer/Github/note/notebook.md"
+			],
+			"find":
+			{
+				"height": 0.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"server2.example.com"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"data2@pgy"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 78.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/home/xio/Dropbox/Developer/Github/gopkg/encoding/json/HTMLEscape.md",
+					"settings":
+					{
+						"buffer_size": 533,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/xio/Dropbox/Developer/Github/gopkg/encoding/json/README.md",
+					"settings":
+					{
+						"buffer_size": 1528,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/home/xio/Dropbox/Developer/Github/gopkg/encoding/json/Indent.md",
+					"settings":
+					{
+						"buffer_size": 965,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/home/xio/Dropbox/Developer/Github/xtimeline/xtimeline/actions/publisher.py",
+				"/home/xio/Dropbox/Developer/Go/src/walle/src/packages",
+				"/home/xio/Dropbox/Developer/Work/pgysocial/pgytask/controllers/followers_crawler.py",
+				"/home/xio/Dropbox/Developer/Work/xtimeline/xtimeline/actions/publisher.py",
+				"/home/xio/Dropbox/Developer/Github/config/sublime-text-2/Packages/GoSublime/CHANGELOG.md",
+				"/home/xio/Dropbox/Developer/Go/src/walle/src/main.go",
+				"/home/xio/Dropbox/Developer/Go/src/walle/README",
+				"/home/xio/Dropbox/Developer/Work/pgysocial/test/test.py",
+				"/home/xio/Dropbox/Developer/Work/pgysocial/playground/test.py",
+				"/home/xio/Dropbox/Developer/Github/config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+				"/home/xio/Dropbox/Developer/Github/note/notebook.md"
+			],
+			"find":
+			{
+				"height": 43.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"ctrl+shift",
+					"ctrl+space",
+					"Shift+space",
+					"server2.example.com"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+					"data2@pgy"
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"folders":
+			[
+				{
+					"path": "/home/xio/Dropbox/Developer/Github/gopkg"
+				}
+			],
+			"groups":
+			[
+				{
+					"selected": 2,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/home/xio/Dropbox/Developer/Github/gopkg/encoding/json/HTMLEscape.md",
+							"settings":
+							{
+								"buffer_size": 533,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										533,
+										533
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Markdown/Markdown.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/xio/Dropbox/Developer/Github/gopkg/encoding/json/README.md",
+							"settings":
+							{
+								"buffer_size": 1528,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Markdown/Markdown.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/xio/Dropbox/Developer/Github/gopkg/encoding/json/Indent.md",
+							"settings":
+							{
+								"buffer_size": 965,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										144,
+										144
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Markdown/Markdown.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 43.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"position": "0,1,0,0,0,0,0,0,0,1920,1080",
+			"replace":
+			{
+				"height": 78.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"window_id": 5,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
