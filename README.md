@@ -1,4 +1,4 @@
 config
 ======
 
-My ArchLinux Some Config File..
+Some Config Files....

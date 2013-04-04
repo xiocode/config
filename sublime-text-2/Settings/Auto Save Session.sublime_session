@@ -510,10 +510,10 @@
 					}
 				},
 				{
-					"file": "/home/xio/Dropbox/Developer/Github/note/notebook.md",
+					"file": "/home/xio/Dropbox/Developer/Github/config/README.md",
 					"settings":
 					{
-						"buffer_size": 2126,
+						"buffer_size": 36,
 						"line_ending": "Unix"
 					}
 				}
@@ -546,6 +546,7 @@
 			},
 			"file_history":
 			[
+				"/home/xio/Dropbox/Developer/Github/note/notebook.md",
 				"/home/xio/Dropbox/Developer/Go/src/github.com/skynetservices/doozerd/README.md",
 				"/home/xio/Dropbox/Developer/Go/src/github.com/skynetservices/doozerd/doozerd.go",
 				"/home/xio/Dropbox/Developer/Go/src/playground/distributed/worker",
@@ -594,7 +595,6 @@
 				"/home/xio/Dropbox/Developer/Github/config/sublime-text-2/Packages/User/Author.sublime-snippet",
 				"/home/xio/Dropbox/Developer/Github/config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
 				"/home/xio/Dropbox/Developer/Github/config/sublime-text-2/Packages/GoSublime/Default (Linux).sublime-keymap",
-				"/home/xio/Dropbox/Developer/Github/note/notebook.md",
 				"/home/xio/Downloads/Symfony/web/app.php",
 				"/home/xio/Dropbox/Developer/Go/src/walle/dev/api/base/users/post.go",
 				"/home/xio/Dropbox/Developer/Go/src/walle/dev/models/tables.go",
@@ -743,8 +743,8 @@
 								"selection":
 								[
 									[
-										1234,
-										1234
+										1139,
+										1139
 									]
 								],
 								"settings":
@@ -760,28 +760,26 @@
 						},
 						{
 							"buffer": 2,
-							"file": "/home/xio/Dropbox/Developer/Github/note/notebook.md",
+							"file": "/home/xio/Dropbox/Developer/Github/config/README.md",
 							"settings":
 							{
-								"buffer_size": 2126,
+								"buffer_size": 36,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2092,
-										2092
+										36,
+										36
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Markdown/Markdown.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
+									"syntax": "Packages/Markdown/Markdown.tmLanguage"
 								},
 								"translation.x": 0.0,
-								"translation.y": 2640.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
