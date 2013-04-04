@@ -1,6 +1,7 @@
 {
 	"folder_history":
 	[
+		"/home/xio/Dropbox/Developer/Go/src/playground",
 		"/home/xio/Dropbox/Developer/Go/src/golearning",
 		"/home/xio/Dropbox/Developer/Go/src/toolkit",
 		"/home/xio/Dropbox/Developer/Go/src/walle",
@@ -9,7 +10,7 @@
 		"/home/xio/Dropbox/Developer/Github/gopkg",
 		"/home/xio/Dropbox/Developer/Go/src/weigo"
 	],
-	"last_window_id": 18,
+	"last_window_id": 19,
 	"settings":
 	{
 		"new_window_height": 0.0,
@@ -145,12 +146,13 @@
 			},
 			"file_history":
 			[
+				"/home/xio/Dropbox/Developer/Go/src/goeg/src/indent_sort/indent_sort.go",
+				"/home/xio/Dropbox/Developer/Go/src/golearning/goroutine_1.go",
+				"/home/xio/Developer/goroutine_1.go",
 				"/home/xio/Dropbox/Developer/Go/src/goeg/src/filter/filter.go",
 				"/home/xio/Dropbox/Developer/Go/src/golearning/generateLog.go",
 				"/home/xio/Dropbox/Developer/Go/src/golearning/split.go",
 				"/home/xio/Dropbox/Developer/Go/src/golearning/splitGoroutine.go",
-				"/home/xio/Dropbox/Developer/Go/src/golearning/goroutine_1.go",
-				"/home/xio/Developer/goroutine_1.go",
 				"/home/xio/Dropbox/Developer/Go/src/golearning/goroutine_2.go",
 				"/home/xio/Developer/goroutine_2.go",
 				"/home/xio/Dropbox/Developer/Go/src/golearning/test.go",
@@ -486,10 +488,24 @@
 			"buffers":
 			[
 				{
-					"file": "/home/xio/Dropbox/Developer/Go/src/playground/distributed/README.md",
+					"contents": "package main\n\nimport (\n	\"fmt\"\n	\"github.com/skynetservices/skynet\"\n	\"github.com/skynetservices/skynet/client\"\n	\"os\"\n)\n\nfunc main() {\n	config, _ := skynet.GetClientConfig()\n\n	var err error\n\n	config.Log = skynet.NewConsoleSemanticLogger(\"TestServiceClient\", os.Stderr)\n\n	client := client.NewClient(config)\n\n	// This will not fail if no services currently exist, as\n	// connections are created on demand this saves from chicken and\n	// egg issues with dependencies between services\n	service := client.GetService(\"TestService\", \"\", \"\", \"\")\n	// (any version, any region, any host)\n\n	// This on the other hand will fail if it can't find a service to\n	// connect to\n	in := map[string]interface{}{\n		\"data\": \"Upcase me!!\",\n	}\n	out := map[string]interface{}{}\n	err = service.Send(nil, \"Upcase\", in, &out)\n\n	if err != nil {\n		fmt.Println(err)\n		return\n	}\n\n	fmt.Println(out[\"data\"].(string))\n}\n",
+					"file": "/home/xio/Dropbox/Developer/Go/src/playground/distributed/worker.go",
+					"file_size": 882,
+					"file_write_time": 1365086861000000,
 					"settings":
 					{
-						"buffer_size": 52,
+						"buffer_size": 882,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"contents": "/**\n * Author:        Tony.Shao\n * Email:         xiocode@gmail.com\n * Github:        github.com/xiocode\n * File:          master.go\n * Description:   Distributed Master\n */\n// package distributed\npackage main\n\nimport (\n	\"github.com/skynetservices/skynet\"\n	\"github.com/skynetservices/skynet/service\"\n	\"log\"\n	\"os\"\n	\"strings\"\n)\n\ntype TestService struct {\n	Log skynet.SemanticLogger\n}\n\nfunc (s *TestService) Registered(service *service.Service)   {}\nfunc (s *TestService) Unregistered(service *service.Service) {}\nfunc (s *TestService) Started(service *service.Service)      {}\nfunc (s *TestService) Stopped(service *service.Service) {\n	s.Log.Trace(\"Stopped\")\n}\n\nfunc (s *TestService) MethodCalled(method string)                               {}\nfunc (s *TestService) MethodCompleted(method string, duration int64, err error) {}\n\nfunc NewTestService() *TestService {\n	r := &TestService{}\n	return r\n}\n\nfunc (s *TestService) Upcase(requestInfo *skynet.RequestInfo, in map[string]interface{}, out map[string]interface{}) (err error) {\n	out[\"data\"] = strings.ToUpper(in[\"data\"].(string))\n	return\n}\n\nfunc main() {\n	testService := NewTestService()\n\n	config, _ := skynet.GetServiceConfig()\n\n	if config.Name == \"\" {\n		config.Name = \"TestService\"\n	}\n\n	if config.Version == \"\" {\n		config.Version = \"1\"\n	}\n\n	if config.Region == \"unknown\" {\n		config.Region = \"Clearwater\"\n	}\n\n	var err error\n	mlogger, err := skynet.NewMongoSemanticLogger(\"localhost\", \"skynet\",\n		\"log\", config.UUID)\n	clogger := skynet.NewConsoleSemanticLogger(\"TestService\", os.Stdout)\n	testService.Log = skynet.NewMultiSemanticLogger(mlogger, clogger)\n	config.Log = testService.Log\n	if err != nil {\n		config.Log.Trace(\"Could not connect to mongo db for logging\")\n	}\n	service := service.CreateService(testService, config)\n\n	// handle panic so that we remove ourselves from the pool in case\n	// of catastrophic failure\n	defer func() {\n		service.Shutdown()\n		if err := recover(); err != nil {\n			log.Println(\"Unrecovered error occured: \", err)\n		}\n	}()\n\n	// If we pass false here service will not be Registered we could\n	// do other work/tasks by implementing the Started method and\n	// calling Register() when we're ready\n	waiter := service.Start(true)\n\n	// waiting on the sync.WaitGroup returned by service.Start() will\n	// wait for the service to finish running.\n	waiter.Wait()\n}\n",
+					"file": "/home/xio/Dropbox/Developer/Go/src/playground/distributed/master.go",
+					"file_size": 2333,
+					"file_write_time": 1365086776000000,
+					"settings":
+					{
+						"buffer_size": 2333,
 						"line_ending": "Unix"
 					}
 				}
@@ -522,6 +538,10 @@
 			},
 			"file_history":
 			[
+				"/home/xio/Dropbox/Developer/Go/src/github.com/skynetservices/doozerd/README.md",
+				"/home/xio/Dropbox/Developer/Go/src/github.com/skynetservices/doozerd/doozerd.go",
+				"/home/xio/Dropbox/Developer/Go/src/playground/distributed/worker",
+				"/home/xio/Dropbox/Developer/Go/src/playground/distributed/master",
 				"/home/xio/Dropbox/Developer/Go/src/goeg/src/indent_sort/indent_sort.go",
 				"/home/xio/Dropbox/Developer/Go/src/golearning/goroutine_1.go",
 				"/home/xio/Developer/goroutine_1.go",
@@ -666,37 +686,66 @@
 			"folders":
 			[
 				{
-					"path": "/home/xio/Dropbox/Developer/Go/src/golearning"
+					"path": "/home/xio/Dropbox/Developer/Go/src/playground"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/xio/Dropbox/Developer/Go/src/playground/distributed/README.md",
+							"file": "/home/xio/Dropbox/Developer/Go/src/playground/distributed/worker.go",
 							"settings":
 							{
-								"buffer_size": 52,
+								"buffer_size": 882,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										52,
-										52
+										139,
+										139
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/Markdown/Markdown.tmLanguage"
+									"syntax": "Packages/GoSublime/GoSublime.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": false
 								},
 								"translation.x": 0.0,
-								"translation.y": 0.0,
+								"translation.y": 594.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/xio/Dropbox/Developer/Go/src/playground/distributed/master.go",
+							"settings":
+							{
+								"buffer_size": 2333,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										1234,
+										1234
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/GoSublime/GoSublime.tmLanguage",
+									"translate_tabs_to_spaces": false
+								},
+								"translation.x": 0.0,
+								"translation.y": 1239.0,
 								"zoom_level": 1.0
 							},
 							"type": "text"
@@ -767,7 +816,7 @@
 			{
 				"height": 174.0
 			},
-			"position": "0,1,0,0,0,0,28,1440,878,1440,900",
+			"position": "0,1,0,0,0,0,0,0,0,1440,900",
 			"replace":
 			{
 				"height": 78.0
@@ -795,7 +844,7 @@
 			"side_bar_visible": true,
 			"side_bar_width": 208.0,
 			"status_bar_visible": true,
-			"window_id": 16,
+			"window_id": 19,
 			"workspace_name": ""
 		}
 	],
